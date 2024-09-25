@@ -15,20 +15,28 @@
             <h1 class="titulo">Pagamento</h1>
             <form>
                 <div>
-                    <label for="Bandeira">Bandeira do Cartão:</label>
-                    <div class="radio">
-                        <input type="radio" value="visa" name="visa" />
-                        <label for="visa"><i class="fab fa-cc-visa fa-2x"></i></label>
+                    <label>Bandeira do Cartão:</label>
+                    <div class="radio-group">
+                        <div class="radio">
+                            <input type="radio" id="visa" value="visa" name="bandeira" />
+                            <label for="visa">
+                                <i class="fab fa-cc-visa fa-3x"></i> Visa
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="mastercard" value="mastercard" name="bandeira" />
+                            <label for="mastercard">
+                                <i class="fab fa-cc-mastercard fa-3x"></i> Mastercard
+                            </label>
+                        </div>
+                        <div class="radio" id="american-radio">
+                            <input type="radio" id="american" value="american" name="bandeira" />
+                            <label for="american">
+                                <i class="fab fa-cc-amex fa-3x"></i> American Express
+                            </label>
+                        </div>
                     </div>
-                    <div class="radio">
-                        <input type="radio" value="mastercard" name="mastercard" />
-                        <label for="mastercard"><i class="fab fa-cc-mastercard fa-2x"></i></label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" value="american" name="american" />
-                        <label for="american"><i class="fab fa-cc-amex fa-2x"></i></label>
-                    </div>
-                </div>
+                </div>                                 
                 <div class="input-arredondado total">
                     <input type="text" id="numero" required />
                     <label for="numero"><i class="fas fa-credit-card"></i> Número do Cartão</label>
