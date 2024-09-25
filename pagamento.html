@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - E-commerce</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="caixa-input">
+            <h1 class="titulo">Pagamento</h1>
+            <form>
+                <div class="input-arredondado total">
+                    <select id="bandeira" required>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                        <option value="amex">American Express</option>
+                    </select>
+                    <label for="bandeira">Bandeira do Cartão</label>
+                </div>
+                <div class="input-arredondado total">
+                    <input type="text" id="numero" required>
+                    <label for="numero">Número do Cartão</label>
+                </div>
+                <div class="input-arredondado total">
+                    <input type="text" id="expiracao" required>
+                    <label for="expiracao">Data de Expiração</label>
+                </div>
+                <div class="input-arredondado total">
+                    <input type="text" id="cvv" required>
+                    <label for="cvv">Código de Segurança</label>
+                </div>
+                <div class="botoes-form">
+                    <a href="finalizacao.html" class="botao-enviar">Finalizar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
