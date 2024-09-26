@@ -9,6 +9,12 @@ body {
     min-height: 100vh;
 }
 
+fieldset { 
+    min-width: 450px;  
+    width: 100%; 
+    border: 1px solid #ccc;
+    padding: 10px;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -27,6 +33,12 @@ body {
     max-width: 500px; 
 }
 
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 20px;    
+}
+
 #grid-produtos{
     max-width: 800px;;
 }
@@ -40,8 +52,8 @@ body {
 
 .lista-produtos {
     display: grid; /* Usando grid para layout responsivo */
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 3 produtos por linha */
-    gap: 20px; /* Espaçamento entre os produtos */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 3 produtos por linha */  
+    gap: 20px; /* Espaçamento entre os produtos */    
 }
 
 .produto {
@@ -123,16 +135,16 @@ body {
     margin-right: 20px; 
 }
 
-.input-arredondado {
+.input-padrao {
     position: relative;
     margin-bottom: 20px;
 }
 
-.input-arredondado.total {
+.input-padrao.total {
     width: 100%;
 }
 
-.input-arredondado label {
+.input-padrao label {
     position: absolute;
     top: 18px;
     left: 20px;
@@ -144,8 +156,8 @@ body {
     border-radius: 5px;
 }
 
-.input-arredondado input,
-.input-arredondado select {
+.input-padrao input,
+.input-padrao select {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
@@ -155,21 +167,33 @@ body {
     color: #fff;
 }
 
-.input-arredondado input:focus,
-.input-arredondado select:focus {
+.input-padrao input:focus,
+.input-padrao select:focus {
     border-color: #05a1a6;
 }
 
-.input-arredondado input:focus ~ label,
-.input-arredondado select:focus ~ label,
-.input-arredondado input:valid ~ label,
-.input-arredondado select:valid ~ label {
+.input-padrao input:focus ~ label,
+.input-padrao select:focus ~ label,
+.input-padrao input:valid ~ label,
+.input-padrao select:valid ~ label {
     top: -10px;
     left: 20px;
     background-color: #05a1a6;
     color: #fff;
     font-size: 0.85em;
     border-radius: 30px;
+}
+
+.pequeno {
+    grid-column: span 1;
+}
+
+.medio {
+    grid-column: span 2;
+}
+
+.grande {
+    grid-column: span 3;
 }
 
 .botoes-form {
@@ -192,6 +216,7 @@ body {
 .botao-enviar:hover {
     background-color: #05a1a6;
 }
+
 header {
     background-color: #333;
     color: white;
@@ -203,16 +228,19 @@ header {
     left: 0;
     z-index: 1000;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
-    }
+}
+
 footer {
     background-color: #333;
     color: white;

@@ -9,31 +9,66 @@
 </head>
 <body>
     <header>
-    <nav>
-        <h1>Pizzaria Caprichada</h1>
-        <a href="index.html">Home</a>
-        <a href="login.html">Login</a>
-    </nav>
+        <nav>
+            <h1>Pizzaria Caprichada</h1>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
     </header>
     <div class="container">
         <div class="caixa-input">
             <h1 class="titulo">Cadastro de Novo Usuário</h1>
             <form>
-                <div class="input-arredondado total">
-                    <input type="text" id="nome" required>
-                    <label for="nome"><i class="fas fa-user"></i> Nome</label>
-                </div>
-                <div class="input-arredondado total">
-                    <input type="email" id="email" required>
-                    <label for="email"><i class="fas fa-envelope"></i> E-mail</label>
-                </div>
-                <div class="input-arredondado total">
-                    <input type="date" id="nascimento" required>
-                    <label for="nascimento"><i class="fas fa-calendar"></i> Data de Nascimento</label>
-                </div>
-                <div class="input-arredondado total">
-                    <input type="text" id="endereco" required>
-                    <label for="endereco"><i class="fas fa-map-marker-alt"></i> Endereço</label>
+                <div class="form-grid">
+                    <div class="input-padrao grande">
+                        <input type="text" id="nome" required>
+                        <label for="nome"><i class="fas fa-user"></i> Nome</label>
+                    </div>
+                    <div class="input-padrao grande">
+                        <input type="email" id="email" required>
+                        <label for="email"><i class="fas fa-envelope"></i> E-mail</label>
+                    </div>
+                    <div class="input-padrao grande">
+                        <input type="date" id="nascimento" required>
+                        <label for="nascimento"><i class="fas fa-calendar"></i> Data de Nascimento</label>
+                    </div>
+                    <fieldset>
+                        <legend><i class="fas fa-map-marker-alt"></i> Endereço</legend>
+                        <div class="form-grid">
+                            <div class="input-padrao pequeno">
+                                <input type="text" id="cep" required>
+                                <label for="cep"></i> CEP</label>
+                            </div>
+                            <div class="input-padrao medio">
+                                <input type="text" id="logradouro" required>
+                                <label for="logradouro">Logradouro</label>
+                            </div>
+                            <div class="input-padrao pequeno">
+                                <input type="text" id="numero" required>
+                                <label for="numero">Número</label>
+                            </div>
+                            <div class="input-padrao pequeno">
+                                <input type="text" id="bairro" required>
+                                <label for="bairro">Bairro</label>
+                            </div>
+                            <div class="input-padrao pequeno">
+                                <input type="text" id="cidade" required>
+                                <label for="cidade">Cidade</label>
+                            </div>
+                            <div class="input-padrao pequeno">
+                                <input type="text" id="estado" required>
+                                <label for="estado">Estado</label>
+                            </div>
+                            <div class="input-padrao pequeno">
+                                <input type="text" id="quadra" required>
+                                <label for="quadra">Quadra</label>
+                            </div>
+                            <div class="input-padrao pequeno">
+                                <input type="text" id="lote" required>
+                                <label for="lote">Lote</label>
+                            </div>
+                        </div>
+                    </fieldset>
                 </div>
                 <div class="botoes-form">
                     <a href="login.html" class="botao-enviar">Salvar</a>
