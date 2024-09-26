@@ -15,6 +15,38 @@ fieldset {
     border: 1px solid #ccc;
     padding: 10px;
 }
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -51,9 +83,9 @@ fieldset {
 }
 
 .lista-produtos {
-    display: grid; /* Usando grid para layout responsivo */
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 3 produtos por linha */  
-    gap: 20px; /* Espaçamento entre os produtos */    
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px; 
 }
 
 .produto {
@@ -67,12 +99,12 @@ fieldset {
 .produto img {
     width: 100%;
     height: auto;
-    border-radius: 5px; /* Arredondar as bordas da imagem */
+    border-radius: 5px; 
 }
 
 .produto h3 {
     margin: 10px 0 5px;
-    font-size: 1.5em; /* Tamanho do título do produto */
+    font-size: 1.5em; 
 }
 
 .produto p {
@@ -81,18 +113,18 @@ fieldset {
 
 .preco {
     font-weight: bold;
-    color: #06bec6; /* Cor do preço */
+    color: #06bec6; 
 }
 
 .quantidade {
-    width: 50px; /* Largura do campo de quantidade */
-    margin-top: 10px; /* Espaçamento acima do campo */
+    width: 50px; 
+    margin-top: 10px; 
 }
 
 .botoes-form {
     display: flex;
-    justify-content: center; /* Centraliza o botão */
-    margin-top: 20px; /* Espaçamento acima dos botões */
+    justify-content: center; 
+    margin-top: 20px;
 }
 
 .botao-enviar {
@@ -114,26 +146,32 @@ fieldset {
 
 .radio-group {
     display: flex;
-    justify-content: space-between; /* Distribui o espaço igualmente entre os itens */
-    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: space-between;
+    align-items: center; 
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
 .radio {
-    display: flex;
-    align-items: center; /* Alinha o ícone e o texto verticalmente */
-    width: 30%; /* Define uma largura para cada opção */
-    position: relative; /* Para o ícone e texto alinharem corretamente */
+    display: flex;        
+    align-items: center;   
+    margin: 8px;    
 }
 
-#american-radio {
-    width: 40%;
+.radio input[type="radio"] {
+    margin-right: 10px; 
+}
+
+.radio label {
+    display: flex;
+    align-items: center; 
+    width: 100%; 
 }
 
 .radio label i {
-    margin-right: 20px; 
+    margin-right: 10px; 
 }
+
 
 .input-padrao {
     position: relative;
@@ -217,33 +255,3 @@ fieldset {
     background-color: #05a1a6;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 1em;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
