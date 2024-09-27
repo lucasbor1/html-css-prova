@@ -189,8 +189,20 @@ footer {
 }
 
 .quantidade {
-    width: 50px; 
-    margin-top: 10px; 
+    width: 50px; /* Define a largura do input */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #444; /* Borda */
+    border-radius: 30px; /* Bordas arredondadas */
+    background-color: #3a3a3a; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    font-size: 1em; /* Tamanho da fonte */
+    transition: border-color 0.3s ease; /* Transição para o foco */
+}
+
+/* Estilo para o foco do input */
+.quantidade:focus {
+    border-color: #05a1a6; /* Muda a cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
 }
 
 .botoes-form {
