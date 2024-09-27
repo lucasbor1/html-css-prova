@@ -56,6 +56,10 @@ nav a {
     text-decoration: none;
 }
 
+h3 #bandeira{
+text-align: center;
+}
+
 .botao-login {
     padding: 10px 20px;
     color: #fff;
@@ -140,7 +144,7 @@ footer {
 }
 
 #grid-produtos{
-    max-width: 800px;;
+    max-width: 800px;
 }
 
 .titulo {
@@ -303,27 +307,6 @@ footer {
     grid-column: span 3;
 }
 
-.botoes-form {
-    display: flex;
-    justify-content: space-between;
-}
-
-.botao-enviar {
-    padding: 15px 25px;
-    color: #fff;
-    background-color: #06bec6;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.botao-enviar:hover {
-    background-color: #05a1a6;
-}
-
 .detalhes-compra {
     margin-bottom: 20px;
     text-align: left;
@@ -349,26 +332,4 @@ footer {
 
 .tabela-compra td {
     background-color: #3a3a3a;
-}
-
-.botoes-form {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.botao-enviar {
-    padding: 15px 25px;
-    color: #fff;
-    background-color: #06bec6;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.botao-enviar:hover {
-    background-color: #05a1a6;
 }
