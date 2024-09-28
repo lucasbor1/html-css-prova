@@ -70,11 +70,7 @@ text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease;
     transform: translate(0%, -50%);
-    -webkit-transform: translate(0%, -50%);
-    -moz-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    -o-transform: translate(0%, -50%);   
-}
+} 
 
 .botao-login:hover {
     background-color: #e63a24;
@@ -102,11 +98,7 @@ text-align: center;
     color: white;
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    border-radius: 10px;
-    -webkit-transform: translate(0%, -50%);
-    -moz-transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%);
-    -o-transform: translate(0%, -50%);
+    border-radius: 10px;  
 }
 
 .inicial-text h1 {
@@ -143,11 +135,7 @@ footer {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     width: 100%;
     max-width: 500px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
+}   
 
 .form-grid {
     display: grid;
@@ -210,11 +198,7 @@ footer {
     color: #fff;
     font-size: 1em;
     transition: border-color 0.3s ease;    
-    -webkit-transition: border-color 0.3s ease;
-    -moz-transition: border-color 0.3s ease;
-    -ms-transition: border-color 0.3s ease;
-    -o-transition: border-color 0.3s ease;
-}
+} 
 
 .quantidade:focus {
     border-color: #f89c11;
@@ -237,11 +221,7 @@ footer {
     cursor: pointer;
     text-decoration: none;
     text-align: center;
-    transition: background-color 0.3s ease;
-    -webkit-transition: background-color 0.3s ease;
-    -moz-transition: background-color 0.3s ease;
-    -ms-transition: background-color 0.3s ease;
-    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;  
 }
 
 .botao-enviar:hover {
