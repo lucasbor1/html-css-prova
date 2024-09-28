@@ -87,6 +87,8 @@ text-align: center;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    position: absolute;
+    z-index: -1; 
 }
 
 .inicial-text {
@@ -346,4 +348,25 @@ footer {
 
 .tabela-compra td {
     background-color: #3a3a3a;
+}
+
+.login {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.login-container {
+    background-color: rgba(45, 45, 45, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
 }
